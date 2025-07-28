@@ -1,7 +1,3 @@
-<HTML>
-<HEAD>
-<TITLE>
-</HEAD>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,39 +7,55 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <header>
     <div class="container">
-      <h1>Tom's Website</h1>
+      <h1>Test Website</h1>
       <nav>
         <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
+<main>
     <section class="fade-in">
-      <h2>Welcome!</h2>
-      <p>This is my website, which I will update with blah blah blah.</p>
+     <h2>Welcome!</h2>
+     <p>This is my website, which I will update with blah blah blah.</p>
     </section>
 
-  <section class="fade-in" id="About">
-    <h2>About</h2>
-    <p>This is the about section with more information.</p>
-  </section>
+    <section class="fade-in" id="About">
+     <h2>About</h2>
+     <p>This is the about section with more information.</p>
+     </section>
   
-   <section id="Contact">
+   <section class="fade-in" id="Contact">
     <h2>Contact</h2>
     <p>Find me on social media sites: xyz.</p>
-  </section>
+    </section>
   
+   <section class="fade-in" id="Clock">
+    <h2>The day is:</h2>
+    <p id="gmt-time">Loading time...</p>
+</section>
 </main>
 
   <footer>
-    <p>&copy; 2025 Tom's Website. All rights reserved.</p>
+    <p>&copy; 2025 Test Website. All rights reserved.</p>
   </footer>
 </body>
+<script>
+  function updateTime() {
+    const now = new Date();
+    const gmtTime = now.toUTCString(); // Converts to GMT/UTC string
+    document.getElementById("gmt-time").textContent = gmtTime;
+  }
+
+  // Update time immediately and every second
+  updateTime();
+  setInterval(updateTime, 1000);
+</script>
 </html>
