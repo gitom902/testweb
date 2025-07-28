@@ -1,1 +1,49 @@
+<HTML>
+<HEAD>
+<TITLE>
+</HEAD>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Tom's Website</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <section class="fade-in">
+      <h2>Welcome!</h2>
+      <p>This is my website, which I will update with blah blah blah.</p>
+    </section>
+
+  <section class="fade-in" id="About">
+    <h2>About</h2>
+    <p>This is the about section with more information.</p>
+  </section>
+  
+   <section id="Contact">
+    <h2>Contact</h2>
+    <p>Find me on social media sites: xyz.</p>
+  </section>
+  
+</main>
+
+  <footer>
+    <p>&copy; 2025 Tom's Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
